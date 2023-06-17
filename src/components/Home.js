@@ -1,19 +1,19 @@
-import React from "react";
-import Navbar from "./Navbar";
-import BannerBackground from "../assets/home-banner-background.png";
-import BannerImage from "../assets/home-banner-image.png";
-import { FiArrowRight } from "react-icons/fi";
+import React from 'react'
+import Navbar from './Navbar'
+import BannerBackground from '../assets/home-banner-background.png'
+import BannerImage from '../assets/home-banner-image.png'
+import { FiArrowRight } from 'react-icons/fi'
 
 const Home = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '31993034536';
-    const message = 'Olá, gostaria de fazer uma pedido?';
-    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = '31993034536'
+    const message = 'Olá, gostaria de fazer uma pedido?'
+    const encodedMessage = encodeURIComponent(message)
 
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`
 
-    window.open(url, '_blank');
-  };
+    window.open(url, '_blank')
+  }
 
   return (
     <div className="home-container" id="home-container">
@@ -27,7 +27,8 @@ const Home = () => {
             O queijo perfeito: Sabor em cada pedaço!
           </h1>
           <p className="primary-text">
-            Saboreie um pedaço do interior em cada mordida do nosso queijo, uma jornada de autenticidade e tradição.
+            Saboreie um pedaço do interior em cada mordida do nosso queijo, uma
+            jornada de autenticidade e tradição.
           </p>
           <button className="secondary-button" onClick={handleWhatsAppClick}>
             Peça já <FiArrowRight />
@@ -38,8 +39,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-
   )
 }
 
-export default Home;
+export default Home
