@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  font-family: "Reem Kufi", sans-serif;
 }
 img {
   max-width: 100%;
@@ -17,9 +17,6 @@ img {
 body {
   max-width: 100%;
   overflow-x: hidden;
-}
-body {
-  background-color: #f6f6f6;
 }
 
 nav {
@@ -74,7 +71,6 @@ nav {
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #4c4c4c;
-  /* line-height: 5rem; */
   max-width: 600px;
 }
 .primary-text {
