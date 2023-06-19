@@ -4,20 +4,9 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 import { TiSocialInstagram } from 'react-icons/ti'
 /* import { FaFacebookF } from "react-icons/fa"; */
 const Footer = () => {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '31993034536'
-    const message = 'Olá, gostaria de fazer uma pedido?'
-    const encodedMessage = encodeURIComponent(message)
-
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`
-
-    window.open(url, '_blank')
-  }
-  const handleInstagramClick = () => {
-    const url = `https://www.instagram.com/bemjequi`
-
-    window.open(url, '_blank')
-  }
+  const handleWhatsAppClick = () => window.open('https://api.whatsapp.com/send?phone=31993034536', '_blank');
+  const handleInstagramClick = () => window.open(`https://www.instagram.com/bemjequi`, '_blank');
+  
   return (
     <div className="footer-wrapper" id="footer">
       <div className="footer-section-one">

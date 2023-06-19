@@ -5,15 +5,7 @@ import BannerImage from '../assets/home-banner-image.png'
 import { FiArrowRight } from 'react-icons/fi'
 
 const Home = () => {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = '31993034536'
-    const message = 'Olá, gostaria de fazer uma pedido?'
-    const encodedMessage = encodeURIComponent(message)
-
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`
-
-    window.open(url, '_blank')
-  }
+  const handleWhatsAppClick = () => window.open('https://api.whatsapp.com/send?phone=31993034536', '_blank');
 
   return (
     <div className="home-container" id="home-container">
