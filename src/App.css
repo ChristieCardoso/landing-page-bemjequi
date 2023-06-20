@@ -5,6 +5,7 @@
   font-family: "Reem Kufi", sans-serif;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -16,11 +17,19 @@ html, body {
   scroll-behavior: smooth;
 }
 
+hr {
+  margin-top: 5rem;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+}
+
+footer {
+  margin-top: 5rem;
 }
 
 .App {
