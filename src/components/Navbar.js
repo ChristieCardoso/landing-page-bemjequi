@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Logo from '../assets/Logo.svg'
-import { HiOutlineBars3 } from 'react-icons/hi2'
+import React, { useState } from "react";
+import Logo from "../assets/Logo.svg";
+import { HiOutlineBars3 } from "react-icons/hi2";
 import {
   Box,
   Drawer,
@@ -10,31 +10,31 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-} from '@mui/material'
-import HomeIcon from '@mui/icons-material/Home'
-import InfoIcon from '@mui/icons-material/Info'
-import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded'
+} from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: 'Home',
+      text: "Home",
       icon: <HomeIcon />,
     },
     {
-      text: 'Sobre',
+      text: "Sobre",
       icon: <InfoIcon />,
     },
 
     {
-      text: 'Contato',
+      text: "Contato",
       icon: <PhoneRoundedIcon />,
     },
-  ]
+  ];
   return (
     <nav>
-      <div className="nav-logo-container">
+      <div className="nav-logo">
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
@@ -66,7 +66,7 @@ const Navbar = () => {
         </Box>
       </Drawer>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -5,20 +5,14 @@
   font-family: "Reem Kufi", sans-serif;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
 hr {
-  margin-top: 5rem;
+  margin: 2rem auto;
+  width: 50%;
 }
 
 nav {
@@ -28,25 +22,27 @@ nav {
   min-height: 90px;
 }
 
-footer {
-  margin-top: 5rem;
+#footer {
+  background: url(./assets/footer-banner.jpg) no-repeat center/cover;
+  margin: auto;
+  height: 250px;
+  width: 100%;
 }
 
 .App {
-  min-height: 100vh;
-  width: 85vw;
+  min-height: 100%;
   max-width: 1900px;
-  margin: 0rem auto;
+  margin: auto;
 }
 
-.navbar-menu-container {
-  display: none;
+.nav-logo {
+  margin-left: 30px;
 }
 
 .navbar-links-container a {
-  margin-right: 3rem;
+  margin-right: 4rem;
   text-decoration: none;
-  color: black;
+  color: #000;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -55,10 +51,17 @@ footer {
   font-size: 1.15rem;
 }
 
+.navbar-menu-container {
+  display: none;
+}
+
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* Home */
+
 .home-banner-container {
   position: relative;
   display: flex;
@@ -69,7 +72,7 @@ footer {
   top: -124px;
   right: -170px;
   z-index: -2;
-  max-width: 700px;  
+  max-width: 700px;
 }
 .home-image-section {
   max-width: 600px;
@@ -77,23 +80,14 @@ footer {
 }
 .home-text-section {
   flex: 1;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
-  max-width: 600px;
-}
-.primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  max-width: 500px;
-  color: #6a6a6a;
-  margin: 1.5rem 0rem;
-}
+/* About */
 
 .about-section-container {
   margin-top: 20rem;
@@ -117,48 +111,83 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.primary-subheading {
+
+.primary-text-about {
   font-weight: 700;
   color: #fe9e0d;
   font-size: 1.15rem;
 }
 
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  max-width: 600px;
+}
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+}
+
+/* Footer */
+
 .footer-wrapper {
-  margin: 6rem 0rem;
   display: flex;
-  margin-top: 10rem;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 10px;
+ 
 }
+
+.footer-section-one {
+  width: 319px;
+  display: block;
+  margin-left: 150px;
+  text-align: center;
+}
+
 .footer-logo-container {
-  max-width: 110px;
-}
-.footer-icons {
-  margin-top: 2.5rem;
+  width: 270px;  
+  margin: 1px auto;
+  padding: 5px;
   
 }
+
+.footer-icons {
+  margin-top: 2rem;
+}
+
+
 .footer-icons svg {
   font-size: 1.5rem;
   margin-right: 1.25rem;
   color: #585858;
-  cursor:pointer;
+  cursor: pointer;
+}
+.text {
+  margin: auto;
+  margin-top: 10px;
 }
 
 .footer-section-two {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  max-width: 330px;
+  margin-right: 150px;
 }
 .footer-section-columns {
   display: flex;
   flex-direction: column;
-  min-width: 190px;
-
+  margin-right: auto;
 }
 .footer-section-columns span {
-  margin: 0.25rem 0rem;
+  margin: 0.25rem 0rem;  
   font-weight: 600;
   color: #4c4c4c;
-  
 }
+
+/* Button */
 
 .secondary-button {
   padding: 1rem 2.5rem;
@@ -179,12 +208,14 @@ footer {
   background-color: #e48f0f;
 }
 
+/* Media query */
+
 @media (max-width: 1000px) {
   .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
   }
- 
+
   .home-bannerImage-container {
     max-width: 600px;
   }
@@ -202,7 +233,7 @@ footer {
   .home-bannerImage-container {
     max-width: 450px;
   }
-  
+
   .about-section-container {
     flex-direction: column-reverse;
     align-items: center;
@@ -230,29 +261,33 @@ footer {
     align-items: center;
     margin-top: 4rem;
   }
-  
+
   .about-section-container {
     margin-top: 5rem !important;
   }
-  
+
   .primary-subheading {
     text-align: center;
   }
-   
+
   .about-section-image-container {
     margin-right: 0rem !important;
-  }  
- 
+  }
+
   .footer-wrapper {
-    flex-direction: column;
+    width: 100%;        
   }
+
   .footer-section-two {
-    flex-direction: column;
-    margin-top: 2rem;
+    font-size: 15px;
   }
-  .footer-section-columns {
-    margin: 1rem 0rem;
-   
+  .footer-logo-container {
+    display: none;
+  }
+
+  .footer-icons {
+    display: flex;    
+    justify-content: flex-start;   
   }
   .App {
     max-width: 95vw;

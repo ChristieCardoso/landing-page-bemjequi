@@ -12,7 +12,7 @@ const About = () => {
         <img src={AboutBackgroundImage} alt="" />
       </div>
       <div className="about-section-text-container">
-        <p className="primary-subheading">Sobre</p>
+        <p className="primary-text-about">Sobre</p>
         <h1 className="primary-heading">
           Bemjequi - A Origem do Sabor Autêntico
         </h1>
@@ -32,7 +32,6 @@ const About = () => {
           especiais. Bem-vindo ao universo Bemjequi, onde cada mordida é uma
           viagem ao coração do interior do Vale Jequitionha.
         </p>
-        <div className="about-buttons-container"></div>
       </div>
     </div>
   )
