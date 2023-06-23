@@ -26,9 +26,7 @@ footer {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  
-  
+  max-width: 100%;
 }
 
 .App {
@@ -38,7 +36,9 @@ footer {
 }
 
 .nav-logo {
-  margin-left: 30px;
+  margin-left: 60px;
+  width: 130px;
+  margin-top: 20px;
 }
 
 .navbar-links-container a {
@@ -136,29 +136,35 @@ footer {
 
 .footer-sections {
   display: flex;
-  justify-content: space-evenly; 
-  flex-decoration: row;
-  flex-wrap: wrap;     
+  flex-direction: column;
   gap: 20px;
   margin: 0px auto;
-  padding: 16px;
-  max-width: 120px;
-  border: 1px solid green;
+  max-width: 350px;
 }
 
 .footer-logo {
-  display: flex; 
-  align-items: center;
-  margin: auto;  
-  margin-bottom: 8px;
-  border: 1px solid blue;
+  display: flex;
+  width: 130px;
 }
 
 .footer-social-links {
   display: flex;
-  gap: 16px;
   cursor: pointer;
-  border: 1px solid red;
+  justify-content: space-evenly;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-social-links SPAN {
+  display: flex;  
+  justify-content: center;
+  padding: 6px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+
+.footer-social-links span:hover {
+  background-color: rgba(0, 50, 0, 0.3);
 }
 
 .footer-rodape {
@@ -170,7 +176,7 @@ footer {
   justify-content: center;
   width: 100%;
   font-size: 14px;
-  opacity: .8;  
+  opacity: 0.8;
 }
 
 /* Button */

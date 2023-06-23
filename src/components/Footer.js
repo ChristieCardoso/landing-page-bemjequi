@@ -13,16 +13,15 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="footer-sections" id="footer">
-        <div>
-          <span className="footer-social-links">
-            <IoLogoWhatsapp onClick={handleWhatsAppClick} />
-            <TiSocialInstagram onClick={handleInstagramClick} />
-            <FaFacebookF onClick={handleFcebookClick} />
-          </span>
-        </div>        
+      <div className="footer-sections" id="footer">        
           <img src={Logo} alt="" className="footer-logo" />        
+          <div className="footer-social-links">
+            <span><IoLogoWhatsapp onClick={handleWhatsAppClick} /></span>
+            <span><TiSocialInstagram onClick={handleInstagramClick} /></span>
+            <span><FaFacebookF onClick={handleFcebookClick} /></span>           
+          </div>                
       </div>
+
       <div className="footer-rodape">
         ©2020. Todos os direitos reservados para Laticínios Bem Jequi.
       </div>
