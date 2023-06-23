@@ -12,27 +12,21 @@ const Footer = () => {
     window.open(`https://www.facebook.com/bemjequi`, "_blank");
 
   return (
-    <div className="footer-wrapper" id="footer">
-      <div className="footer-section-one">
-        <div className="footer-icons">
-          <IoLogoWhatsapp onClick={handleWhatsAppClick} />
-          <TiSocialInstagram onClick={handleInstagramClick} />
-          <FaFacebookF onClick={handleFcebookClick} />
-        </div>
-        <p className="text">
-          ©2020. Todos os direitos reservados para Laticínios Bem Jequi.
-        </p>
+    <footer>
+      <div className="footer-sections" id="footer">
+        <div>
+          <span className="footer-social-links">
+            <IoLogoWhatsapp onClick={handleWhatsAppClick} />
+            <TiSocialInstagram onClick={handleInstagramClick} />
+            <FaFacebookF onClick={handleFcebookClick} />
+          </span>
+        </div>        
+          <img src={Logo} alt="" className="footer-logo" />        
       </div>
-      <div className="footer-logo-container">
-        <img src={Logo} alt="" />
+      <div className="footer-rodape">
+        ©2020. Todos os direitos reservados para Laticínios Bem Jequi.
       </div>
-      <div className="footer-section-two">
-        <div className="footer-section-columns">
-          <span>(31) 9 9303-4536</span>
-          <span>bemjequi@hotmail.com</span>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 
