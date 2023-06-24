@@ -1,8 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
-import BannerBackground from '../assets/home-banner-background.png'
-import BannerImage from '../assets/home-banner-image.png'
+import Navbar from '../Navbar'
+import BannerBackground from '../../assets/home-banner-background.png'
+import BannerImage from '../../assets/home-banner-image.png'
 import { FiArrowRight } from 'react-icons/fi'
+import './style.css'
+
+
 
 const Home = () => {
   const handleWhatsAppClick = () => window.open('https://api.whatsapp.com/send?phone=31993034536', '_blank');
