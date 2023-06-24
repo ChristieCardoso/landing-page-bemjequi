@@ -58,3 +58,16 @@
   color: #6a6a6a;
   margin: 1.5rem 0rem;
 }
+
+@media (max-width: 1000px) {
+  
+  .home-bannerImage-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-bannerImage-container {
+    max-width: 450px;
+  }
+}

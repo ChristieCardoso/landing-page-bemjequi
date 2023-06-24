@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/Logo.svg";
+import Logo from "../../assets/Logo.svg";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import {
   Box,
@@ -14,6 +14,7 @@ import {
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import './style.css' 
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
