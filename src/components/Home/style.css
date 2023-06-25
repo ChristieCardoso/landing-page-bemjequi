@@ -41,7 +41,8 @@
   width: 9em;
   height: 3em;
   border-radius: 30em;
-  font-size: 15px;
+  font-size: 15px;  
+  font-weight: 700;
   border: none;
   position: relative;
   cursor: pointer;

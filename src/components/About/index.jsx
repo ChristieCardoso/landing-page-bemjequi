@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutBackground from '../../assets/about-background.png'
 import AboutBackgroundImage from '../../assets/about-background-image.png'
+import './style.css'
 
 const About = () => {
   return (
@@ -12,7 +13,6 @@ const About = () => {
         <img src={AboutBackgroundImage} alt="" />
       </div>
       <div className="about-section-text-container">
-        <p className="primary-text-about">Sobre</p>
         <h1 className="primary-heading">
           Bemjequi - A Origem do Sabor Autêntico
         </h1>
