@@ -1,32 +1,32 @@
 nav {
   display: flex;
-  border: solid red 1px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .nav-logo {
-  margin-left: 60px;
   width: 130px;
-  margin-top: 20px;
-  border: 1px solid red;
+  margin-left: 50px;
 }
 
 .navbar-links-container {
   display: flex;
-  border: 1px solid red;
-  margin: auto 4px;
-  
+  margin-right: 80px;
+  gap: 1.5rem;
 }
 
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
   color: #000;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border: 1px solid red;
+  font-weight: 700;
+}
+
+.navbar-links-container:hover a {
+  filter: blur(3px);
+}
+
+.navbar-links-container a:hover {
+  filter: blur(0px);
 }
 
 .navbar-cart-icon {
@@ -40,8 +40,15 @@ nav {
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  margin-left: 290px;
 }
 
+.navbar-drawer {
+  border: 1px solid green;
+  display: flex;
+  align-items: flex-start;
+}
 
 @media (max-width: 1000px) {
   .navbar-links-container a {
@@ -50,9 +57,9 @@ nav {
   }
 }
 
-@media (max-width: 800px) {
-  .nav-logo-container {
-    max-width: 140px;
+@media (max-width: 700px) {
+  .nav-logo {
+    width: 80px;
   }
   .navbar-links-container {
     display: none;

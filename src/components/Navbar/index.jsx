@@ -47,6 +47,7 @@ const Navbar = () => {
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+      <div className="navbar-drawer">
         <Box
           sx={{ width: 250 }}
           role="presentation"
@@ -65,6 +66,7 @@ const Navbar = () => {
           </List>
           <Divider />
         </Box>
+      </div>
       </Drawer>
     </nav>
   );

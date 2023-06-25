@@ -11,8 +11,6 @@ img {
 
 /* Media query */
 
-
-
 @media (max-width: 600px) {
   .home-bannerImage-container,
   .about-background-image-container {
