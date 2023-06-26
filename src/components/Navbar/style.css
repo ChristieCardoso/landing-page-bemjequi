@@ -49,9 +49,7 @@ nav {
 }
 
 .navbar-drawer {
-  border: 1px solid green;
-  display: flex;
-  align-items: flex-start;
+  margin-top: 20px;  
 }
 
 @media (max-width: 1000px) {
