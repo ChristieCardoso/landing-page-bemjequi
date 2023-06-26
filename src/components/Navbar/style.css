@@ -1,6 +1,9 @@
 nav {
   display: flex;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  margin-top: 1rem;
 }
 
 .nav-logo {
@@ -19,6 +22,7 @@ nav {
   text-decoration: none;
   color: #000;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .navbar-links-container:hover a {
@@ -41,7 +45,7 @@ nav {
   font-size: 1.5rem;
   cursor: pointer;
   display: flex;
-  margin-left: 290px;
+  margin-left: 12rem;
 }
 
 .navbar-drawer {

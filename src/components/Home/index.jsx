@@ -11,10 +11,10 @@ const Home = () => {
   const handleWhatsAppClick = () => window.open('https://api.whatsapp.com/send?phone=31993034536', '_blank');
 
   return (
-    <div className="home-container" id="home-container">
+    <div id="home-container">
       <Navbar />
       <div className="home-banner-container">
-        <div className="home-bannerImage-container">
+        <div className="home-bannerImage">
           <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
