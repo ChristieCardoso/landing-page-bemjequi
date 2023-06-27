@@ -14,6 +14,15 @@ const Footer = () => {
   const handleFcebookClick = () =>
     window.open(`https://www.facebook.com/bemjequi`, "_blank");
 
+
+  document.querySelector('a[href^="#footer"]').addEventListener('click', function (e) {
+    e.preventDefault();
+  
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+  
   return (
     <footer id="footer">
       <div className="footer-container">

@@ -3,7 +3,15 @@ import AboutBackground from '../../assets/about-background.png'
 import AboutBackgroundImage from '../../assets/about-background-image.png'
 import './style.css'
 
-const About = () => {
+const About = () => {  
+  document.querySelector('a[href^="#sobre"]').addEventListener('click', function (e) {
+    e.preventDefault();
+  
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+  
   return (
     <div className="about-section-container" id="sobre">
       <div className="about-background-image">
