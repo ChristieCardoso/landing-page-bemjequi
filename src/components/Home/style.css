@@ -86,12 +86,10 @@
   }
   .primary-text {
     font-size: 25px;
-    border: 1px solid red;
     width: 250px;
   }
 
   .home-image-section {
-    border: 1px solid red;
     margin: auto;
     display: flex;
     max-height: 200px;
@@ -101,8 +99,8 @@
 
 @media (max-width: 600px) {
   .home-image-section,
-  .home-banner-background,
-  .about-background-image {
+  .home-banner-background
+   {
     display: none;
   }
 }
