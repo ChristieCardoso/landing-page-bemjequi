@@ -48,16 +48,14 @@
     margin-top: 4rem;
   }
 
-  .about-section-container {
-    margin-top: 5rem !important;
-  }
+
 
   .primary-subheading {
     text-align: center;
   }
 
-  .about-section-image-container {
-    margin-right: 0rem !important;
+  ..about-background-image {
+    margin-right: 5rem !important;
   }
 }
 @media (max-width: 600px) {  
