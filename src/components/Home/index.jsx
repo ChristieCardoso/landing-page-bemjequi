@@ -1,21 +1,23 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import BannerBackground from '../../assets/home-banner-background.png'
-import BannerImage from '../../assets/home-banner-image.png'
-import { FiArrowRight } from 'react-icons/fi'
-import './style.css'
-
-
+import React from "react";
+import Navbar from "../Navbar";
+import BannerBackground from "../../assets/home-banner-background.png";
+import BannerImage from "../../assets/home-banner-image.png";
+import { FiArrowRight } from "react-icons/fi";
+import "./style.css";
 
 const Home = () => {
-  const handleWhatsAppClick = () => window.open('https://api.whatsapp.com/send?phone=31993034536', '_blank');
+  const handleWhatsAppClick = () =>
+    window.open("https://api.whatsapp.com/send?phone=31993034536", "_blank");
 
   return (
     <div id="home-container">
       <Navbar />
-      <div className="home-banner-container">
-        <div className="home-bannerImage">
+      <div className="home-container">
+        <div className="home-banner-background">
           <img src={BannerBackground} alt="" />
+        </div>
+        <div className="home-image-section">
+          <img src={BannerImage} alt="" />
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
@@ -29,12 +31,9 @@ const Home = () => {
             Peça já <FiArrowRight />
           </button>
         </div>
-        <div className="home-image-section">
-          <img src={BannerImage} alt="" />
-        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

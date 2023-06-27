@@ -6,11 +6,11 @@ import './style.css'
 const About = () => {
   return (
     <div className="about-section-container" id="sobre">
-      <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
+      <div className="about-background-image">
+        <img src={AboutBackground} alt="Imagem de background" />
       </div>
-      <div className="about-section-image-container">
-        <img src={AboutBackgroundImage} alt="" />
+      <div className="about-image">
+        <img src={AboutBackgroundImage} alt="Imagem do rótulo" />
       </div>
       <div className="about-section-text-container">
         <h1 className="primary-heading">

@@ -1,19 +1,24 @@
-.home-banner-container {
+.home-container {
   position: relative;
   display: flex;
   padding-top: 3rem;
+  flex-direction: row-reverse; 
 }
-.home-bannerImage {
+.home-banner-background {
   position: absolute;
   top: -122px;
   right: 0px;
   z-index: -2;
   max-width: 700px;
+  
 }
+
 .home-image-section {
   max-width: 450px;
   flex: 1;
+  margin-right: 150px;
 }
+
 .home-text-section {
   flex: 1;
   display: flex;
@@ -70,21 +75,34 @@
 
 @media (max-width: 1000px) {
   
-  .home-bannerImage-container {
-    max-width: 350px;
+  .home-banner-background {
+    max-width: 480px;
   }
 }
 
 @media (max-width: 800px) {
-  .home-bannerImage-container {
-    max-width: 350px;
+  .home-banner-background {
+    max-width: 300px;
+  }
+  .primary-text {
+    font-size: 25px;
+    border: 1px solid red;
+    width: 250px;
+  }
+
+  .home-image-section {
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    max-height: 200px;
+    max-width: 250px;
   }
 }
 
 @media (max-width: 600px) {
-  .home-bannerImage,
   .home-image-section,
-  .about-background-image-container {
+  .home-banner-background,
+  .about-background-image {
     display: none;
   }
 }
