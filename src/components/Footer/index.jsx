@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 import "./style.css";
 
-const Footer = () => {
+export function Footer() {
   const handleWhatsAppClick = () =>
     window.open("https://api.whatsapp.com/send?phone=31993034536", "_blank");
   const handleInstagramClick = () =>
@@ -16,28 +16,17 @@ const Footer = () => {
 
   return (
     <footer id="footer">
-      <div className="footer-container">
+      <div>
+        <img src={Logo} alt="Logo" />
         <section>
-          <img src={Logo} alt="" className="footer-logo" />
-
-          <section className="footer-social-links">
-            <span>
-              <IoLogoWhatsapp onClick={handleWhatsAppClick} />
-            </span>
-            <span>
-              <TiSocialInstagram onClick={handleInstagramClick} />
-            </span>
-            <span>
-              <FaFacebookF onClick={handleFcebookClick} />
-            </span>
-          </section>
+          <span><IoLogoWhatsapp onClick={handleWhatsAppClick} /></span>
+          <span><TiSocialInstagram onClick={handleInstagramClick} />
+          </span><span><FaFacebookF onClick={handleFcebookClick} /></span>
         </section>
       </div>
-      <div className="footer-text">
-        <p>©2020. Todos os direitos reservados para Laticínios Bem Jequi.</p>
-      </div>
+      <p>
+        ©2020. Todos os direitos reservados para Laticínios Bem Jequi.
+      </p>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,7 +1,7 @@
-import Footer from './components/Footer'
-import { Home } from './components/Home'
+import { Footer } from "./components/Footer";
+import { Home } from "./components/Home";
 
-import '../src/styles/global.css'
+import "../src/styles/global.css";
 
 export function App() {
   return (
@@ -9,5 +9,5 @@ export function App() {
       <Home />
       <Footer />
     </div>
-  )
+  );
 }
