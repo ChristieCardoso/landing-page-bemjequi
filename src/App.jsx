@@ -1,15 +1,13 @@
-import '../src/styles/global.css'
-import About from './components/About'
 import Footer from './components/Footer'
-import Home from './components/Home'
+import { Home } from './components/Home'
 
-function App() {
+import '../src/styles/global.css'
+
+export function App() {
   return (
     <div>
       <Home />
-      <About />
       <Footer />
     </div>
   )
 }
-export default App

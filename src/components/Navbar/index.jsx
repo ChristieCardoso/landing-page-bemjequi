@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React, { useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -5,7 +6,6 @@ import {
   Box,
   Drawer,
   List,
-  Divider,
   ListItem,
   ListItemButton,
   ListItemIcon,
@@ -18,19 +18,23 @@ import './style.css'
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   const menuOptions = [
     {
       text: "Home",
       icon: <HomeIcon />,
+      id: "#home"
     },
     {
       text: "Sobre",
       icon: <InfoIcon />,
+      id: "#sobre"
     },
 
     {
       text: "Contato",
       icon: <PhoneRoundedIcon />,
+      id: "#footer"
     },
   ];
   return (
@@ -47,7 +51,6 @@ const Navbar = () => {
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
-      <div className="navbar-drawer">
         <Box
           sx={{ width: 250 }}
           role="presentation"
@@ -56,17 +59,15 @@ const Navbar = () => {
         >
           <List>
             {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+              <ListItem key={item.id} disablePadding>
+                <ListItemButton href={item.id}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
               </ListItem>
             ))}
           </List>
-          <Divider />
         </Box>
-      </div>
       </Drawer>
     </nav>
   );

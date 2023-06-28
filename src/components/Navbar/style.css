@@ -44,7 +44,6 @@ nav {
 .navbar-menu-container svg {
   font-size: 1.5rem;
   cursor: pointer;
-  display: flex;
   margin-left: 12rem;
 }
 
