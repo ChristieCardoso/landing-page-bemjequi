@@ -17,13 +17,15 @@
 
 #footer section span {
   cursor: pointer;
-  margin-top: 4px;
   font-size: 24px;
   padding: 7px;
+  margin: 2px;
+  border-radius: 60%;
+  
 }
 
 #footer span:hover {
-  background-color: #32540f;
+  background-color: #54813f;
   opacity: 0.7;
 }
 
