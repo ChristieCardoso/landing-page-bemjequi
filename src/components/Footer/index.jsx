@@ -17,7 +17,7 @@ export function Footer() {
   return (
     <footer id="footer">
       <div>
-        <img src={Logo} alt="Logo" />
+        <img src={Logo} alt="Logo da marca" />
         <section>
           <span>
             <IoLogoWhatsapp onClick={handleWhatsAppClick} />
