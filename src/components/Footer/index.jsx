@@ -19,14 +19,18 @@ export function Footer() {
       <div>
         <img src={Logo} alt="Logo" />
         <section>
-          <span><IoLogoWhatsapp onClick={handleWhatsAppClick} /></span>
-          <span><TiSocialInstagram onClick={handleInstagramClick} />
-          </span><span><FaFacebookF onClick={handleFcebookClick} /></span>
+          <span>
+            <IoLogoWhatsapp onClick={handleWhatsAppClick} />
+          </span>
+          <span>
+            <TiSocialInstagram onClick={handleInstagramClick} />
+          </span>
+          <span>
+            <FaFacebookF onClick={handleFcebookClick} />
+          </span>
         </section>
       </div>
-      <p>
-        ©2020. Todos os direitos reservados para Laticínios Bem Jequi.
-      </p>
+      <p>©2020. Todos os direitos reservados para Laticínios Bem Jequi.</p>
     </footer>
   );
 }

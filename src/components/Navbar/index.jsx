@@ -13,7 +13,7 @@ import {
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import './style.css' 
+import "./style.css";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -22,18 +22,18 @@ const Navbar = () => {
     {
       text: "Home",
       icon: <HomeIcon />,
-      id: "#home"
+      id: "#home",
     },
     {
       text: "Sobre",
       icon: <InfoIcon />,
-      id: "#sobre"
+      id: "#sobre",
     },
 
     {
       text: "Contato",
       icon: <PhoneRoundedIcon />,
-      id: "#footer"
+      id: "#footer",
     },
   ];
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
-          sx={{ width: 250, marginTop: '30px' }}
+          sx={{ width: 250, marginTop: "30px" }}
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}

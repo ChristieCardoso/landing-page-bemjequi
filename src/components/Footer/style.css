@@ -14,14 +14,12 @@
   margin-left: 20px;
 }
 
-
 #footer section span {
   cursor: pointer;
   font-size: 24px;
   padding: 7px;
   margin: 2px;
   border-radius: 60%;
-  
 }
 
 #footer span:hover {
@@ -42,13 +40,10 @@
 @media (max-width: 800px) {
   #footer img {
     margin-top: 15px;
-    
   }
   #footer div {
     display: flex;
     flex-direction: column;
-    
-    
   }
   #footer p {
     font-size: 13px;

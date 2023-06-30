@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   padding-top: 3rem;
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
 }
 .home-banner-background {
   position: absolute;
@@ -10,7 +10,6 @@
   right: 0px;
   z-index: -2;
   max-width: 700px;
-  
 }
 
 .home-image-section {
@@ -28,7 +27,7 @@
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  background: -webkit-linear-gradient(45deg, #228B22, #ADFF2F 100%);
+  background: -webkit-linear-gradient(45deg, #228b22, #adff2f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 600px;
@@ -38,25 +37,25 @@
 .primary-text {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   max-width: 700px;
-  color: #4F4F4F;
-  margin: 15px 5.5rem ;
+  color: #4f4f4f;
+  margin: 15px 5.5rem;
 }
 
 .secondary-button {
   width: 9em;
   height: 3em;
   border-radius: 30em;
-  font-size: 15px;  
+  font-size: 15px;
   font-weight: 700;
   border: none;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 6px 6px 12px #4F4F4F, -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #4f4f4f, -6px -6px 12px #ffffff;
 }
 .secondary-button::before {
-  content: '';
+  content: "";
   width: 0;
   height: 3em;
   border-radius: 30em;
@@ -64,7 +63,7 @@
   top: 0;
   left: 0;
   background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
-  transition: .6s ease;
+  transition: 0.6s ease;
   display: block;
   z-index: -1;
 }
@@ -74,7 +73,6 @@
 }
 
 @media (max-width: 1000px) {
-  
   .home-banner-background {
     max-width: 480px;
   }
@@ -99,8 +97,7 @@
 
 @media (max-width: 600px) {
   .home-image-section,
-  .home-banner-background
-   {
+  .home-banner-background {
     display: none;
   }
 }
@@ -121,13 +118,13 @@
 .about-image {
   flex: 1;
   margin-right: 1rem;
-  max-width: 600px; 
+  max-width: 600px;
 }
 .about-section-text-container {
   flex: 2;
   justify-content: center;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 @media (max-width: 800px) {
@@ -141,7 +138,7 @@
     flex: 2;
   }
 
-  .about-image {    
+  .about-image {
     margin: auto;
     display: flex;
     max-height: 200px;
@@ -163,7 +160,7 @@
     margin-right: 5rem !important;
   }
 }
-@media (max-width: 600px) {  
+@media (max-width: 600px) {
   .about-background-image,
   .about-image {
     display: none;

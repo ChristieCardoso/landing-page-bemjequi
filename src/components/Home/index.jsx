@@ -5,7 +5,6 @@ import AboutBackgroundImage from "../../assets/about-background-image.png";
 import BannerBackground from "../../assets/home-banner-background.png";
 import BannerImage from "../../assets/home-banner-image.png";
 import { FiArrowRight } from "react-icons/fi";
-
 import "./style.css";
 
 export function Home() {
@@ -14,13 +13,13 @@ export function Home() {
 
   return (
     <div id="home-container">
-      <Navbar  />
+      <Navbar />
       <div className="home-container">
         <div className="home-banner-background">
-          <img src={BannerBackground} alt="" />
+          <img src={BannerBackground} alt="Imagem de background do head" />
         </div>
         <div className="home-image-section">
-          <img src={BannerImage} alt="" />
+          <img src={BannerImage} alt="Imagem do banner do queijo" />
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
