@@ -1,40 +1,66 @@
-# Getting Started with Create React App
+## About The Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+Projeto de uma landing page para um produto que vendo. Eu utilizo este projeto para promover meu produto e praticar o que tenho aprendido sobre desenvolvimento web.
 
-In the project directory, you can run:
+<br />
+<br />
 
-### `npm start`
+## How To Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Clone this repository
+$ git clone https://github.com/ChristieCardoso/landing-page-bemjequi
 
-### `npm test`
+# Go into the repository
+$ cd landing-page-bemjequi
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+$ npm install
 
-### `npm run build`
+# Run the app
+$ npm start
+```
+> **Note**
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+* ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+* ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+* ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+* ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-### `npm run eject`
+<br />
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Packages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### UI Editor
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Name | Description |
+| --- | --- |
+| [`@mui/material`](https://mui.com/) | Material Design |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br />
+<br />
+
+## License
+
+MIT
+
+---
+
+> [bemjequi.vercel.app](https://bemjequi.vercel.app/) &nbsp;&middot;&nbsp;
+> GitHub [@ChristieCardoso](https://github.com/ChristieCardoso/landing-page-bemjequi) &nbsp;&middot;&nbsp;
+> Linkedin [@Christie Cardoso](https://www.linkedin.com/in/christie-cardoso-164a28235/)
