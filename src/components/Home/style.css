@@ -12,7 +12,7 @@
 }
 
 .home-image {
-  width: 500px;
+  width: 650px;
   margin-right: 50px;
 }
 
@@ -70,7 +70,6 @@
 }
 
 .about-section-container {
-  border: 1px solid red;
   margin-top: 10rem;
   margin-bottom: 10rem;
   position: relative;
@@ -86,21 +85,60 @@
   width: 320px;
 }
 .about-image {
-  max-width: 600px;
+  width: 700px;
+  margin-left: 50px;
 }
 
 .about-section-text-container {
-  border: 1px solid red;
   margin: 10px;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+  .home-banner-background,
+  .primary-heading {
+    max-width: 420px;
+  }
+  .about-image {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-banner-background {
+    max-width: 280px;
+  }
+  .primary-text {
+    font-size: 25px;
+    width: 350px;
+    margin: 10px auto;
+    margin-top: 30px;
+  }
+
+  .home-image {
+    margin: 1px auto;
+    max-width: 250px;
+  }
+
+  .about-image {
+    width: 400px;
+    margin: 280px -10px 800px;
+    margin-bottom: 600px;
+  }
+}
+
 @media (max-width: 800px) {
   .home-banner-background {
-    display: flex;
     max-width: 280px;
+  }
+
+  .about-image {
+    max-width: 350px;
+    margin: auto;
   }
 
   .about-banner-background {
@@ -111,13 +149,6 @@
     font-size: 25px;
     width: 250px;
     flex: 2;
-  }
-
-  .about-image {
-    margin: auto;
-    display: flex;
-    max-height: 200px;
-    max-width: 250px;
   }
 
   .about-section-text-container {
@@ -138,35 +169,8 @@
   .about-image {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
-  .home-banner-background {
-    max-width: 380px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .home-banner-background {
-    max-width: 380px;
-  }
-}
-
-@media (max-width: 900px) {
-  .home-banner-background {
-    max-width: 280px;
-  }
-  .primary-text {
-    font-size: 25px;
-    width: 250px;
-  }
-
-  .home-text-section {
+  .home-text-section,
+  .about-section-text-container {
     margin: auto;
-  }
-
-  .home-image {
-    margin: 1px auto;
-    max-width: 250px;
   }
 }
