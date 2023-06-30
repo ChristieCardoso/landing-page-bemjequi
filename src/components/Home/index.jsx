@@ -18,7 +18,7 @@ export function Home() {
         <div className="home-banner-background">
           <img src={BannerBackground} alt="Imagem de background do head" />
         </div>
-        <div className="home-image-section">
+        <div className="home-image">
           <img src={BannerImage} alt="Imagem do banner do queijo" />
         </div>
         <div className="home-text-section">
@@ -35,7 +35,7 @@ export function Home() {
         </div>
       </div>
       <div className="about-section-container" id="sobre">
-        <div className="about-background-image">
+        <div className="about-banner-background">
           <img src={AboutBackground} alt="Imagem de background" />
         </div>
         <div className="about-image">

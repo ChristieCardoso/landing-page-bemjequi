@@ -7,23 +7,21 @@
 .home-banner-background {
   position: absolute;
   top: -122px;
-  right: 0px;
   z-index: -2;
-  max-width: 700px;
+  max-width: 500px;
 }
 
-.home-image-section {
-  max-width: 450px;
-  flex: 1;
-  margin-right: 150px;
+.home-image {
+  width: 500px;
+  margin-right: 50px;
+  border: 1px solid red;
 }
 
 .home-text-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  margin-left: 20px;
+  border: 1px solid red;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
@@ -74,31 +72,32 @@
 
 @media (max-width: 1000px) {
   .home-banner-background {
-    max-width: 480px;
+    max-width: 380px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .home-banner-background {
-    max-width: 300px;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-banner-background {
+    max-width: 280px;
   }
   .primary-text {
     font-size: 25px;
     width: 250px;
   }
 
-  .home-image-section {
+  .home-text-section {
     margin: auto;
-    display: flex;
-    max-height: 200px;
-    max-width: 250px;
   }
-}
 
-@media (max-width: 600px) {
-  .home-image-section,
-  .home-banner-background {
-    display: none;
+  .home-image {
+    margin: 1px auto;
+    max-width: 250px;
   }
 }
 
@@ -109,7 +108,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.about-background-image {
+.about-banner-background {
   position: absolute;
   left: -60px;
   z-index: -2;
@@ -128,7 +127,12 @@
 }
 
 @media (max-width: 800px) {
-  .about-background-image {
+  .home-banner-background {
+    display: flex;
+    max-width: 280px;
+  }
+
+  .about-banner-background {
     max-width: 300px;
     top: 150px;
   }
@@ -145,7 +149,6 @@
     max-width: 250px;
   }
 
-  .home-text-section,
   .about-section-text-container {
     justify-content: center;
     align-items: center;
@@ -155,13 +158,12 @@
   .primary-subheading {
     text-align: center;
   }
-
-  ..about-background-image {
-    margin-right: 5rem !important;
-  }
 }
-@media (max-width: 600px) {
-  .about-background-image,
+
+@media (max-width: 700px) {
+  .home-banner-background,
+  .home-image,
+  .about-banner-background,
   .about-image {
     display: none;
   }

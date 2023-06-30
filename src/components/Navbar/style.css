@@ -38,10 +38,17 @@ nav {
   margin-left: 12rem;
 }
 
-@media (max-width: 1000px) {
+// media query
+
+@media (max-width: 1100px) {
+  .navbar-links-container {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
   .navbar-links-container a {
-    margin-right: 1rem;
-    font-size: 1rem;
+    margin-right: 0px;
   }
 }
 
