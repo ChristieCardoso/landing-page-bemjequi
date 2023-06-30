@@ -4,6 +4,7 @@
   padding-top: 3rem;
   flex-direction: row-reverse;
 }
+
 .home-banner-background {
   position: absolute;
   top: -122px;
@@ -51,6 +52,7 @@ button {
   z-index: 1;
   box-shadow: 6px 6px 12px #4f4f4f, -6px -6px 12px #ffffff;
 }
+
 button::before {
   content: "";
   width: 0;
@@ -101,6 +103,7 @@ button:hover::before {
   h1 {
     max-width: 420px;
   }
+
   .about-image {
     width: 500px;
     margin: auto;
@@ -112,6 +115,7 @@ button:hover::before {
   .home-banner-background {
     max-width: 280px;
   }
+
   p {
     font-size: 25px;
     width: 350px;
@@ -144,17 +148,6 @@ button:hover::before {
   .about-banner-background {
     max-width: 300px;
     top: 150px;
-  }
-  .about-text-container {
-    font-size: 25px;
-    width: 250px;
-    flex: 2;
-  }
-
-  .about-text-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
   }
 
   .primary-subheading {
