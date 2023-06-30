@@ -162,13 +162,8 @@ button:hover::before {
   .about-image {
     display: none;
   }
-<<<<<<< HEAD
-  .home-text-section,
-  .about-section-text-container {
-=======
   .home-text-container,
   .about-text-container {
->>>>>>> melhoria-do-css
     margin: auto;
   }
 
