@@ -4,7 +4,7 @@ nav {
   margin-top: 1.3rem;
 }
 
-.nav-logo {
+.logo {
   width: 130px;
   margin-left: 50px;
 }
@@ -38,8 +38,6 @@ nav {
   margin-left: 12rem;
 }
 
-// media query
-
 @media (max-width: 1000px) {
   .navbar-links-container {
     margin-right: 0px;
@@ -53,7 +51,7 @@ nav {
 }
 
 @media (max-width: 700px) {
-  .nav-logo {
+  .logo {
     width: 100px;
   }
   .navbar-links-container {

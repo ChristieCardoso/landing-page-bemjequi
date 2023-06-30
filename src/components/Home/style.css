@@ -4,6 +4,7 @@
   padding-top: 3rem;
   flex-direction: row-reverse;
 }
+
 .home-banner-background {
   position: absolute;
   top: -122px;
@@ -16,14 +17,14 @@
   margin-right: 50px;
 }
 
-.home-text-section {
+.home-text-container {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   gap: 20px;
 }
 
-.primary-heading {
+h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   background: -webkit-linear-gradient(45deg, #228b22, #adff2f 100%);
   -webkit-background-clip: text;
@@ -31,14 +32,14 @@
   max-width: 600px;
 }
 
-.primary-text {
+p {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   max-width: 700px;
   color: #4f4f4f;
   margin: 15px 3.5rem;
 }
 
-.secondary-button {
+button {
   width: 9em;
   height: 3em;
   border-radius: 30em;
@@ -51,7 +52,8 @@
   z-index: 1;
   box-shadow: 6px 6px 12px #4f4f4f, -6px -6px 12px #ffffff;
 }
-.secondary-button::before {
+
+button::before {
   content: "";
   width: 0;
   height: 3em;
@@ -65,11 +67,11 @@
   z-index: -1;
 }
 
-.secondary-button:hover::before {
+button:hover::before {
   width: 9em;
 }
 
-.about-section-container {
+#about {
   margin-top: 10rem;
   margin-bottom: 10rem;
   position: relative;
@@ -89,7 +91,7 @@
   margin-left: 50px;
 }
 
-.about-section-text-container {
+.about-text-container {
   margin: 10px;
   justify-content: center;
   display: flex;
@@ -98,9 +100,10 @@
 
 @media (max-width: 1000px) {
   .home-banner-background,
-  .primary-heading {
+  h1 {
     max-width: 420px;
   }
+
   .about-image {
     width: 500px;
     margin: auto;
@@ -112,7 +115,8 @@
   .home-banner-background {
     max-width: 280px;
   }
-  .primary-text {
+
+  p {
     font-size: 25px;
     width: 350px;
     margin: 10px auto;
@@ -145,17 +149,6 @@
     max-width: 300px;
     top: 150px;
   }
-  .about-section-text-container {
-    font-size: 25px;
-    width: 250px;
-    flex: 2;
-  }
-
-  .about-section-text-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
 
   .primary-subheading {
     text-align: center;
@@ -169,12 +162,17 @@
   .about-image {
     display: none;
   }
+<<<<<<< HEAD
   .home-text-section,
   .about-section-text-container {
+=======
+  .home-text-container,
+  .about-text-container {
+>>>>>>> melhoria-do-css
     margin: auto;
   }
 
-  .primary-heading {
+  h1 {
     margin: auto 20px;
   }
 }

@@ -27,7 +27,7 @@ const Navbar = () => {
     {
       text: "Sobre",
       icon: <InfoIcon />,
-      id: "#sobre",
+      id: "#about",
     },
 
     {
@@ -38,12 +38,12 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo">
-        <img src={Logo} alt="" />
+      <div className="logo">
+        <img src={Logo} alt="Logo da marca" />
       </div>
       <div className="navbar-links-container">
-        <a href="#home-container">Home</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
         <a href="#footer">Contato</a>
       </div>
       <div className="navbar-menu-container">

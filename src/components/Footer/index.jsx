@@ -3,7 +3,6 @@ import Logo from "../../assets/Logo.svg";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FaFacebookF } from "react-icons/fa";
-
 import "./style.css";
 
 export function Footer() {
@@ -17,7 +16,7 @@ export function Footer() {
   return (
     <footer id="footer">
       <div>
-        <img src={Logo} alt="Logo" />
+        <img src={Logo} alt="Logo da marca" />
         <section>
           <span>
             <IoLogoWhatsapp onClick={handleWhatsAppClick} />
