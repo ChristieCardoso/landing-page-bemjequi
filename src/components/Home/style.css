@@ -8,35 +8,34 @@
   position: absolute;
   top: -122px;
   z-index: -2;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .home-image {
   width: 500px;
   margin-right: 50px;
-  border: 1px solid red;
 }
 
 .home-text-section {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  border: 1px solid red;
+  gap: 20px;
 }
+
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   background: -webkit-linear-gradient(45deg, #228b22, #adff2f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 600px;
-  margin-left: 35px;
 }
 
 .primary-text {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   max-width: 700px;
   color: #4f4f4f;
-  margin: 15px 5.5rem;
+  margin: 15px 3.5rem;
 }
 
 .secondary-button {
@@ -70,57 +69,29 @@
   width: 9em;
 }
 
-@media (max-width: 1000px) {
-  .home-banner-background {
-    max-width: 380px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .home-banner-background {
-    max-width: 380px;
-  }
-}
-
-@media (max-width: 900px) {
-  .home-banner-background {
-    max-width: 280px;
-  }
-  .primary-text {
-    font-size: 25px;
-    width: 250px;
-  }
-
-  .home-text-section {
-    margin: auto;
-  }
-
-  .home-image {
-    margin: 1px auto;
-    max-width: 250px;
-  }
-}
-
 .about-section-container {
-  margin-top: 20rem;
+  border: 1px solid red;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
+
 .about-banner-background {
   position: absolute;
-  left: -60px;
+  left: -1px;
   z-index: -2;
-  top: -250px;
+  top: -100px;
+  width: 320px;
 }
 .about-image {
-  flex: 1;
-  margin-right: 1rem;
   max-width: 600px;
 }
+
 .about-section-text-container {
-  flex: 2;
+  border: 1px solid red;
+  margin: 10px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -166,5 +137,36 @@
   .about-banner-background,
   .about-image {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-banner-background {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home-banner-background {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-banner-background {
+    max-width: 280px;
+  }
+  .primary-text {
+    font-size: 25px;
+    width: 250px;
+  }
+
+  .home-text-section {
+    margin: auto;
+  }
+
+  .home-image {
+    margin: 1px auto;
+    max-width: 250px;
   }
 }
