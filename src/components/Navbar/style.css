@@ -1,9 +1,7 @@
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90px;
-  margin-top: 1rem;
+  width: 100vw;
+  margin-top: 1.3rem;
 }
 
 .nav-logo {
@@ -13,28 +11,21 @@ nav {
 
 .navbar-links-container {
   display: flex;
-  margin-right: 80px;
+  margin-right: 60px;
   gap: 1.5rem;
 }
 
 .navbar-links-container a {
+  color: #000000;
   margin-right: 3rem;
   text-decoration: none;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.navbar-links-container:hover a {
-  filter: blur(3px);
+  transition: 0.25s ease;
+  font-size: 18px;
 }
 
 .navbar-links-container a:hover {
-  filter: blur(0px);
-}
-
-.navbar-cart-icon {
-  font-size: 1.15rem;
+  color: #228b22;
+  box-shadow: 0 2px 0 0 currentcolor;
 }
 
 .navbar-menu-container {
@@ -47,10 +38,6 @@ nav {
   margin-left: 12rem;
 }
 
-.navbar-drawer {
-  margin-top: 20px;  
-}
-
 @media (max-width: 1000px) {
   .navbar-links-container a {
     margin-right: 1rem;
@@ -60,7 +47,7 @@ nav {
 
 @media (max-width: 700px) {
   .nav-logo {
-    width: 80px;
+    width: 100px;
   }
   .navbar-links-container {
     display: none;

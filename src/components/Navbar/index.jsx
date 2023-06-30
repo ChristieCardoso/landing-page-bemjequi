@@ -1,4 +1,3 @@
-/* eslint-disable react/style-prop-object */
 import React, { useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -52,7 +51,7 @@ const Navbar = () => {
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 250, marginTop: '30px' }}
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
